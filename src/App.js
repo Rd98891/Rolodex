@@ -30,6 +30,7 @@ class App extends Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
     return (
       <div className="App">
+        <h1 style = {{fontFamily: 'Bigelow Rules', color: '#0ccac4', fontSize: '72px' }} > Monsters Rolodex </h1>
         <SearchBar
           placeholder="Search Here" 
           handleChange={this.takeInput}
